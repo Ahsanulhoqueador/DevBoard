@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- Font awesome  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- color selector -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#F4F7FF',
+          text: '#FFFFFF',
+          button: '#3752FD',
+        }
+      }
+    }
+  }
+</script>
+
+  
+
+
+
+</head >
+<body class="bg-clifford" >
+    <nav class=" mx-10 my-">
+        <div class="navbar bg-base-100 shadow-sm rounded-xl">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-xl"><img src="assets/logo.png" alt=""></a>
+              <h2 class="text-4xl">Dev<span class="font-bold">Board</span></h2>
+            </div>
+            <div class="gap-x-[50px] ">
+              <div class="flex gap-x-[10px] bg-clifford py-[6px] px-[6px] rounded-xl ">
+                <img class="w-[32px] h-[32px]" src="assets/checkbox.png" alt="">
+                <p class="text-3xl pb-[10px] ">23</p>
+              </div>
+              <div>
+                <button class="mr-[30px]"><img src="assets/theme-btn.png" alt=""></button>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <main class="flex   ">
+      <section class="mx-10 my-8 bg-text rounded-xl w-[1095px] h-[1000px] py-[20px] px-[10px]">
+        <!-- first 3 mini card  -->
+         <div class="flex gap-x-[24px]">       
+          <div class="flex gap-x-[20px] w-[250px] h-[100px] bg-clifford py-[20px] px-[20px] rounded-xl">
+            <div class="rounded-xl ">
+              <img class="py-[16px]" src="assets/checkbox.png" alt="">
+            </div>
+            <div>
+              <h2 class="text-base">Task Assigned</h2>
+              <h2 class="font-bold text-3xl">05</h2>
+            </div>
+          </div>
+          <div class="flex gap-x-[10px] w-[524px] h-[100px]  rounded-xl py-[16px] px-[40px] " style=" background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%,rgb(108, 127, 250) 52.66%,rgb(155, 168, 248) 99.733%);">
+            <div>
+              <img class="h-[71.1px] w-[63.1px]" src="assets/board.png" alt="">
+            </div>
+            <div>
+              <h2 class="text-2xl w-[298px] h-[72px] text-text">Discover Something  <br>New Today!</h2>
+            </div>
+          </div>
+          <div class="flex gap-x-[20px] w-[250px] h-[100px] bg-clifford py-[20px] px-[20px] rounded-xl">
+            <div class="rounded-xl ">
+              <img class="py-[16px]" src="assets/calender.png" alt="">
+            </div>
+            <div>
+              <h2 class="text-2xl">Wed</h2>
+              <h2 class="font-bold text-2xl">Jul 28 2025</h2>
+            </div>
+          </div>
+        </div>
+        <hr class="border-t-2 border-dotted border-gray-500 w-full mt-[34px]">
+
+
+        <!-- first 3 mini card finished -->
+         <!-- big card start here -->
+         <div class="my-[64px] flex gap-x-[24px]">
+          <!-- first big card -->
+          <div class="w-[342px] h-[350px] rounded-xl bg-clifford pt-[32px] px-[40px]">
+            <div class="w-[144px] h-[44px] bg-base-100 rounded-xl ">
+              <h2 class="text-base px-[36px] py-[10px] ">ShopEase</h2>
+            </div>
+            <div class="mt-[16px]">
+              <h2 class="text-2xl font-medium">Fix Mobile Button Issue</h2>
+            </div>
+            <div  class="mt-[32px]">
+              <textarea  id="" class="w-[262px] h-[92px] rounded-xl px-[16px] py-[16px]">Debug using Chrome DevTools, check for overlapping ...</textarea>
+            </div>
+            <hr >
+            <div class="flex gap-x-[48px] mt-[27px]">
+              <div class="">
+                <h2 class="text-sm">Deadline</h2>
+                <h2 class="text-base font-medium">21 March 2025 </h2>
+              </div>
+              <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button">Completed</button>
+            </div>
+  
+          </div>
+          <div class="w-[342px] h-[350px] rounded-xl bg-clifford pt-[32px] px-[40px]">
+            <div class="w-[144px] h-[44px] bg-base-100 rounded-xl ">
+              <h2 class="text-base px-[36px] py-[10px] ">CloudSync</h2>
+            </div>
+            <div class="mt-[16px]">
+              <h2 class="text-2xl font-medium">Add Dark mode</h2>
+            </div>
+            <div  class="mt-[32px]">
+              <textarea  id="" class="w-[262px] h-[92px] rounded-xl px-[16px] py-[16px]">Store the user's preference in localStorage, update CSS....</textarea>
+            </div>
+            <hr >
+            <div class="flex gap-x-[48px] mt-[27px]">
+              <div class="">
+                <h2 class="text-sm">Deadline</h2>
+                <h2 class="text-base font-medium">21 March 2025 </h2>
+              </div>
+              <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button">Completed</button>
+            </div>
+  
+          </div>
+          <div class="w-[342px] h-[350px] rounded-xl bg-clifford pt-[32px] px-[40px]">
+            <div class="w-[144px] h-[44px] bg-base-100 rounded-xl ">
+              <h2 class="text-base px-[36px] py-[10px] ">SwiftPay</h2>
+            </div>
+            <div class="mt-[16px]">
+              <h2 class="text-2xl font-medium">Optimize  Home page</h2>
+            </div>
+            <div  class="mt-[32px]">
+              <textarea  id="" class="w-[262px] h-[92px] rounded-xl px-[16px] py-[16px]">Debug using Chrome DevTools, check for overpaling..</textarea>
+            </div>
+            <hr >
+            <div class="flex gap-x-[48px] mt-[27px]">
+              <div class="">
+                <h2 class="text-sm">Deadline</h2>
+                <h2 class="text-base font-medium">21 March 2025 </h2>
+              </div>
+              <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button">Completed</button>
+            </div>
+  
+          </div>
+            
+  
+         </div>
+         <!-- first big card finished -->
+          <!-- second big card start -->
+          <div class="my-[64px] flex gap-x-[24px]">
+            <!-- first big card -->
+            <div class="w-[342px] h-[350px] rounded-xl bg-clifford pt-[32px] px-[40px]">
+              <div class="w-[144px] h-[44px] bg-base-100 rounded-xl ">
+                <h2 class="text-base px-[36px] py-[10px] ">Meta</h2>
+              </div>
+              <div class="mt-[16px]">
+                <h2 class="text-2xl font-medium">Add New Emoji</h2>
+              </div>
+              <div  class="mt-[32px]">
+                <textarea  id="" class="w-[262px] h-[92px] rounded-xl px-[16px] py-[16px]">Debug using Chrome DevTools, check for overlapping ...</textarea>
+              </div>
+              <hr >
+              <div class="flex gap-x-[48px] mt-[27px]">
+                <div class="">
+                  <h2 class="text-sm">Deadline</h2>
+                  <h2 class="text-base font-medium">21 March 2025 </h2>
+                </div>
+                <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button">Completed</button>
+              </div>
+    
+            </div>
+            <div class="w-[342px] h-[350px] rounded-xl bg-clifford pt-[32px] px-[40px]">
+              <div class="w-[144px] h-[44px] bg-base-100 rounded-xl ">
+                <h2 class="text-base px-[36px] py-[10px] ">Google </h2>
+              </div>
+              <div class="mt-[16px]">
+                <h2 class="text-2xl font-medium">Integrate OpenAI API </h2>
+              </div>
+              <div  class="mt-[32px]">
+                <textarea  id="" class="w-[262px] h-[92px] rounded-xl px-[16px] py-[16px]">Debug using Chrome DevTools, check for overlapping ...</textarea>
+              </div>
+              <hr >
+              <div class="flex gap-x-[48px] mt-[27px]">
+                <div class="">
+                  <h2 class="text-sm">Deadline</h2>
+                  <h2 class="text-base font-medium">21 March 2025 </h2>
+                </div>
+                <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button">Completed</button>
+              </div>
+    
+            </div>
+            <div class="w-[342px] h-[350px] rounded-xl bg-clifford pt-[32px] px-[40px]">
+              <div class="w-[144px] h-[44px] bg-base-100 rounded-xl ">
+                <h2 class="text-base px-[36px] py-[10px] ">Glassdoar</h2>
+              </div>
+              <div class="mt-[16px]">
+                <h2 class="text-2xl font-medium">Improve Job searching </h2>
+              </div>
+              <div  class="mt-[32px]">
+                <textarea  id="" class="w-[262px] h-[92px] rounded-xl px-[16px] py-[16px]">Debug using Chrome DevTools, check for overlapping ...</textarea>
+              </div>
+              <hr >
+              <div class="flex gap-x-[48px] mt-[27px]">
+                <div class="">
+                  <h2 class="text-sm">Deadline</h2>
+                  <h2 class="text-base font-medium">21 March 2025 </h2>
+                </div>
+                <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button">Completed</button>
+              </div>
+    
+            </div>
+              
+    
+           </div>
+  
+  
+      </section>
+
+      <section class="w-[300px] h-[1000px] rounded-xl bg-text ml-[10px] my-8 mx-1">
+        <div class="flex gap-x-[10px] py-[24px] px-[92px]">
+          <img class="h-[24px] w-[24px]" src="assets/activity.png" alt="">
+           <h2 class="text-xl font-medium w-[122px] h-[30px]">Activity Log</h2>
+        </div>
+        <div class="py-[] px-[92px] mt-[15px]">
+          <button class="btn btn-secondary w-[150px] h-[44px] bg-button border-button">Clear History</button>
+        </div>
+        <div>
+          <hr class="border-t-2 border-dotted border-gray-500 w-full mt-[18px]">
+
+        </div>
+
+      </section>
+    </main>
+   
+    
+    
+</body>
+</html>
