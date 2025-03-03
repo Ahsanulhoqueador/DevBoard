@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>taskmitter netifiy</title>
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -43,10 +43,10 @@
             <div class="gap-x-[50px] ">
               <div class="flex gap-x-[10px] bg-clifford py-[6px] px-[6px] rounded-xl ">
                 <img class="w-[32px] h-[32px]" src="assets/checkbox.png" alt="">
-                <p class="text-3xl pb-[10px] ">23</p>
+                <p class="text-3xl pb-[10px] " id="check-point">23</p>
               </div>
               <div>
-                <button class="mr-[30px]"><img src="assets/theme-btn.png" alt=""></button>
+                <button id="color-change" class="mr-[30px]"><img src="assets/theme-btn.png" alt=""></button>
               </div>
             </div>
           </div>
@@ -61,10 +61,10 @@
             </div>
             <div>
               <h2 class="text-base">Task Assigned</h2>
-              <h2 class="font-bold text-3xl">05</h2>
+              <h2 class="font-bold text-3xl" id="board-text">06</h2>
             </div>
           </div>
-          <div class="flex gap-x-[10px] w-[524px] h-[100px]  rounded-xl py-[16px] px-[40px] " style=" background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%,rgb(108, 127, 250) 52.66%,rgb(155, 168, 248) 99.733%);">
+          <div class="flex gap-x-[10px] w-[524px] h-[100px]  rounded-xl py-[16px] px-[40px] " style=" background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%,rgb(108, 127, 250) 52.66%,rgb(155, 168, 248) 99.733%);" id="Second-part">
             <div>
               <img class="h-[71.1px] w-[63.1px]" src="assets/board.png" alt="">
             </div>
@@ -77,8 +77,8 @@
               <img class="py-[16px]" src="assets/calender.png" alt="">
             </div>
             <div>
-              <h2 class="text-2xl">Wed</h2>
-              <h2 class="font-bold text-2xl">Jul 28 2025</h2>
+              <h2 class="text-2xl font-bold" id="day" >Wed</h2>
+             
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@
                 <h2 class="text-sm">Deadline</h2>
                 <h2 class="text-base font-medium">21 March 2025 </h2>
               </div>
-              <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button">Completed</button>
+              <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button" id="button-click">Completed</button>
             </div>
   
           </div>
@@ -117,7 +117,7 @@
               <h2 class="text-2xl font-medium">Add Dark mode</h2>
             </div>
             <div  class="mt-[32px]">
-              <textarea  id="" class="w-[262px] h-[92px] rounded-xl px-[16px] py-[16px]">Store the user's preference in localStorage, update CSS....</textarea>
+              <textarea  id="button-click" class="w-[262px] h-[92px] rounded-xl px-[16px] py-[16px]">Store the user's preference in localStorage, update CSS....</textarea>
             </div>
             <hr >
             <div class="flex gap-x-[48px] mt-[27px]">
@@ -125,7 +125,7 @@
                 <h2 class="text-sm">Deadline</h2>
                 <h2 class="text-base font-medium">21 March 2025 </h2>
               </div>
-              <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button">Completed</button>
+              <button  class="btn btn-secondary w-[108px] h-[44px] bg-button border-button" id="button-click2" >Completed</button>
             </div>
   
           </div>
@@ -145,7 +145,7 @@
                 <h2 class="text-sm">Deadline</h2>
                 <h2 class="text-base font-medium">21 March 2025 </h2>
               </div>
-              <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button">Completed</button>
+              <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button" id="button-click3">Completed</button>
             </div>
   
           </div>
@@ -172,7 +172,7 @@
                   <h2 class="text-sm">Deadline</h2>
                   <h2 class="text-base font-medium">21 March 2025 </h2>
                 </div>
-                <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button">Completed</button>
+                <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button" id="button-click4" >Completed</button>
               </div>
     
             </div>
@@ -192,7 +192,7 @@
                   <h2 class="text-sm">Deadline</h2>
                   <h2 class="text-base font-medium">21 March 2025 </h2>
                 </div>
-                <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button">Completed</button>
+                <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button" id="button-click5">Completed</button>
               </div>
     
             </div>
@@ -212,7 +212,7 @@
                   <h2 class="text-sm">Deadline</h2>
                   <h2 class="text-base font-medium">21 March 2025 </h2>
                 </div>
-                <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button">Completed</button>
+                <button class="btn btn-secondary w-[108px] h-[44px] bg-button border-button" id="button-click6">Completed</button>
               </div>
     
             </div>
@@ -229,17 +229,87 @@
            <h2 class="text-xl font-medium w-[122px] h-[30px]">Activity Log</h2>
         </div>
         <div class="py-[] px-[92px] mt-[15px]">
-          <button class="btn btn-secondary w-[150px] h-[44px] bg-button border-button">Clear History</button>
+          <button class="btn btn-secondary w-[150px] h-[44px] bg-button border-button" id="clear-button">Clear History</button>
         </div>
         <div>
           <hr class="border-t-2 border-dotted border-gray-500 w-full mt-[18px]">
 
         </div>
+        <div class="" id="element-to-remove">
+          <div class="my-[10px] mx-[30px]">
+            <div  class="w-[250px] h-[68px] bg-clifford rounded-xl">
+              <h2 class="text-base py-[10px] px-[10px]  "id="comment">
+                
+  
+              </h2>
+  
+            </div>
+  
+          </div>
+          <div class="my-[10px] mx-[30px]">
+            <div  class="w-[250px] h-[68px] bg-clifford rounded-xl">
+              <h2 class="text-base py-[10px] px-[10px]  "id="comment2">
+                
+  
+              </h2>
+  
+            </div>
+  
+          </div>
+          <div class="my-[10px] mx-[30px]">
+            <div  class="w-[250px] h-[68px] bg-clifford rounded-xl">
+              <h2 class="text-base py-[10px] px-[10px]  "id="comment3">
+                
+  
+              </h2>
+  
+            </div>
+  
+          </div>
+          <div class="my-[10px] mx-[30px]">
+            <div  class="w-[250px] h-[68px] bg-clifford rounded-xl">
+              <h2 class="text-base py-[10px] px-[10px]  "id="comment4">
+                
+  
+              </h2>
+  
+            </div>
+  
+          </div>
+  
+          <div class="my-[10px] mx-[30px]">
+            <div  class="w-[250px] h-[68px] bg-clifford rounded-xl">
+              <h2 class="text-base py-[10px] px-[10px]  "id="comment5">
+                
+  
+              </h2>
+  
+            </div>
+  
+          </div>
+          <div class="my-[10px] mx-[30px]">
+            <div  class="w-[250px] h-[68px] bg-clifford rounded-xl">
+              <h2 class="text-base py-[10px] px-[10px]  "id="comment6">
+                
+  
+              </h2>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+
+
+
+        
 
       </section>
     </main>
    
     
-    
+    <!-- javascript file link -->
+    <script src="first.js" defer></script>
+
 </body>
 </html>

@@ -36,7 +36,7 @@
               <h2 class="text-4xl">Dev<span class="font-bold">Board</span></h2>
             </div>
             <div class="flex-none">
-                <button class="btn btn-secondary  w-[150px] h-[44px] bg-button border-button">Back To Desk</button>
+                <button class="btn btn-secondary  w-[150px] h-[44px] bg-button border-button" id="back-button">Back To Desk</button>
             </div>
           </div>
 
@@ -53,51 +53,77 @@
             </div>
             <hr class="mt-[10px] ">
             <div class="mt-[40px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eos cumque reiciendis. Natus cum obcaecati accusantium asperiores praesentium atque repudiandae dolore iure corporis, maiores rerum totam nostrum quasi laborum tempora.
+                There are 6 ways that we can select an element in the dom . 1.getElementById() 2.getElementsByClassName() 3.getElementsByTagName() 4.querySelector() 5.querySelectorAll() 6.getElementsByName() . 
             </div>
          </div>
          <!-- 2nd question start here -->
          <div class="px-[15px] py-[8px] h-[150px] bg-text mt-[20px]">
             <div>
-                <h2 class="text-xl font-medium">Question-1: What are the different ways to select an element in the DOM?</h2>
+                <h2 class="text-xl font-medium">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
     
             </div>
             <hr class="mt-[10px] ">
-            <div class="mt-[40px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eos cumque reiciendis. Natus cum obcaecati accusantium asperiores praesentium atque repudiandae dolore iure corporis, maiores rerum totam nostrum quasi laborum tempora.
+            <div class="mt-[30px]">
+                innerHTML: parse and return html content ,including tags. It can modify the element's structure . 
+                <br>
+                innertext: Returns only visible text, ignoring hidden element (display:none). it does not parse HtML.
+                <br> 
+                textContent: Returns all text, including hidden elements. It does not parse HTML and is faster than innerText.
+                
             </div>
          </div>
          <!-- 3 question start here -->
          <div class="px-[15px] py-[8px] h-[150px] bg-text mt-[20px]">
             <div>
-                <h2 class="text-xl font-medium">Question-1: What are the different ways to select an element in the DOM?</h2>
+                <h2 class="text-xl font-medium">Question-3: What is event delegation in the DOM?
+
+                </h2>
     
             </div>
             <hr class="mt-[10px] ">
             <div class="mt-[40px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eos cumque reiciendis. Natus cum obcaecati accusantium asperiores praesentium atque repudiandae dolore iure corporis, maiores rerum totam nostrum quasi laborum tempora.
+                Event delegation in JavaScript is a pattern that efficiently handles events.
             </div>
          </div>
          <!-- 4 start here -->
          <div class="px-[15px] py-[8px] h-[150px] bg-text mt-[20px]">
             <div>
-                <h2 class="text-xl font-medium">Question-1: What are the different ways to select an element in the DOM?</h2>
+                <h2 class="text-xl font-medium">Question-4: What is event bubbling in the DOM?</h2>
     
             </div>
             <hr class="mt-[10px] ">
-            <div class="mt-[40px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eos cumque reiciendis. Natus cum obcaecati accusantium asperiores praesentium atque repudiandae dolore iure corporis, maiores rerum totam nostrum quasi laborum tempora.
+            <div class="mt-[30px]">
+                Event bubbling directs an event to its target. It works like this:
+
+When an element (like a button) is clicked, an event is directed to the element.
+If an event handler is set for the element, the event handler is triggered.
+Then the event "bubbles up" to the elements parent.
+If an event handler is set for the parent, this event handler is triggered.
+The event continues to bubble, until it reaches the top (the document element).
+ 
             </div>
          </div>
          <!-- 5 question start here  -->
          <div class="px-[15px] py-[8px] h-[150px] bg-text mt-[20px]">
             <div>
-                <h2 class="text-xl font-medium">Question-1: What are the different ways to select an element in the DOM?</h2>
+                <h2 class="text-xl font-medium">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
     
             </div>
             <hr class="mt-[10px] ">
-            <div class="mt-[40px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eos cumque reiciendis. Natus cum obcaecati accusantium asperiores praesentium atque repudiandae dolore iure corporis, maiores rerum totam nostrum quasi laborum tempora.
+            <div class="mt-[10px]">
+                1. Create an Element (document.createElement())
+                <br>
+                2. Add an Element to the DOM:
+                Append to an existing element (appendChild),
+                Insert Before another element (insertBefore),
+                Append multiple elements (append)
+                <br>
+                3. Remove an Element :
+                Using remove(),
+                Using removeChild()
+
+
+
             </div>
          </div>
 
@@ -106,6 +132,6 @@
        
 
     </main>
-    
+    <script src="other.js" defer ></script>
 </body>
 </html>
